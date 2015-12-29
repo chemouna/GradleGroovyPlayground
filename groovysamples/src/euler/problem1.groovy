@@ -1,4 +1,4 @@
-package com.mounacheikhna.playground.euler
+package euler
 
 /**
  * Created by cheikhnamouna on 12/28/15.
