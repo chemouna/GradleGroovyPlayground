@@ -48,3 +48,6 @@ local.properties
 # Sandbox stuff
 _sandbox
 
+
+*/gradlew
+*/gradle.bat
