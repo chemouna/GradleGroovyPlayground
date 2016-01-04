@@ -50,4 +50,11 @@ _sandbox
 
 
 */gradlew
-*/gradle.bat
+gradlew
+*/gradlew.bat
+gradlew.bat
+
+.idea/
+.idea/*
+
+local.properties
