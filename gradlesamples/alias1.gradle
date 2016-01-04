@@ -1,0 +1,21 @@
+
+void wireOrderedDependencies( task, others) {
+    task.dependsOn(others)
+    for (int i = 0; i < others.size() - 1; i++) {
+        others[i+1].mustRunAfter(others[i])
+    }
+}
+
+task all(description: 'an alias for :  clean assemble check test ') {
+}
+
+//--- set up the "all" target's dependencies IN ORDER in this List
+def all_dependenciesInOrder = []
+
+subprojects.each () { sp ->
+    all_dependenciesInOrder.add sp.clean
+}
+all_dependenciesInOrder += [clean, assemble, check, test]
+
+wireOrderedDependencies(all, all_dependenciesInOrder)
+
