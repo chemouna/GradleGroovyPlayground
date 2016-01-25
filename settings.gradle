@@ -1,1 +1,3 @@
-include ':androidapp', 'groovysamples'
+include 'groovysamples'
+include 'demo-plugin'
+

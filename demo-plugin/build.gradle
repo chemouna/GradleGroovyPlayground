@@ -1,0 +1,13 @@
+version 'unspecified'
+
+apply plugin: 'groovy'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile localGroovy()
+    compile gradleApi()
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
