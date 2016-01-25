@@ -48,7 +48,6 @@ local.properties
 # Sandbox stuff
 _sandbox
 
-
 */gradlew
 gradlew
 */gradlew.bat
@@ -60,3 +59,7 @@ gradlew.bat
 local.properties
 
 *.iml
+.idea/**
+GradleGroovyPlayground.iml
+**.iml
+out/*
